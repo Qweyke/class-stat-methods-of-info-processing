@@ -5,7 +5,7 @@ from scipy import stats
 
 def check_normality_chi2(data):
     mu = np.mean(data)
-    sigma = np.std(data)
+    sigma = np.std(data, ddof=1)
     n = len(data)
 
     num_bins = int((3.78 * (n - 1)) ** (2 / 5))
