@@ -1,5 +1,4 @@
 import numpy as np
-import pandas as pd
 from scipy import stats
 
 
@@ -21,9 +20,6 @@ def check_normality_chi2(data):
 
     if p_val < 0.05:
         return False
-        # print(f"Результат: H0 отвергается. Распределение {name} НЕ НОРМАЛЬНОЕ.\n")
+
     else:
         return True
-        # print(
-        #     f"Результат: H0 не отвергается. Распределение {name} похоже на нормальное.\n"
-        # )
